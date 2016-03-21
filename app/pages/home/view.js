@@ -14,11 +14,9 @@ function($, baseView, template) {
         context: {
             templateName: 'home',
             hero: function() {
-                var $hero = $('.hero');
-                return $hero;
+                return $('.hero');
             },
             shipping: function() {
-                var $freeShipping = $('.free-shipping');
                 return $('.free-shipping').attr('x-src');
             },
             discountBanner: function() {
