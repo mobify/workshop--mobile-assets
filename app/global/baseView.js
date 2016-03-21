@@ -28,7 +28,7 @@ function($, ResizeImages, Descript, Utils, Defaults, Settings, header, footer, b
     var resizeImages = function() {
         var $imgs = $('img');
         var defaultOpts = {
-            projectName: Defaults.projectName,
+            projectName: Defaults.projectName
         };
 
         ResizeImages.resize($imgs, defaultOpts);

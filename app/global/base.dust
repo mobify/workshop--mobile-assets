@@ -43,7 +43,7 @@
         </div>
     {/bodyBlock}
     {+scripts}
-
+        {desktopScripts}
         {! Site UI scripts !}
         {?config.isLocal}
             <script src="{@getUrl path="js/ui.js" /}"></script>
@@ -52,7 +52,7 @@
         {/config.isLocal}
 
         {+uiScripts}{/uiScripts}
-        {desktopScripts}
+       
     {/scripts}
 </body>
 </html>
