@@ -9,8 +9,6 @@ function($, Hijax, ResizeImages) {
         hijax.set('add-image', '/add-image.html', {
             receive: function(data, xhr) {
                 var options = {
-                    maxWidth: 400,
-                    maxHeight: 400,
                     sourceAttribute: 'src'
                 };
                 var $image = $(data);
