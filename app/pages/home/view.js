@@ -5,16 +5,22 @@
 define([
     '$',
     'global/baseView',
-    'dust!pages/home/template'
+    'dust!pages/home/template',
+    'resizeImages'
 ],
-function($, baseView, template) {
+function($, baseView, template, ResizeImages) {
     return {
         template: template,
         extend: baseView,
         context: {
             templateName: 'home',
             hero: function() {
-                return $('.hero');
+                var $hero = $('.hero');
+                ResizeImages.resize($hero, {
+                    maxWidth: 400,
+                    maxHeight: 400
+                });
+                return $hero;
             },
             shipping: function() {
                 return $('.free-shipping').attr('x-src');
