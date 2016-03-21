@@ -9,6 +9,10 @@ define([
     'resizeImages'
 ],
 function($, baseView, template, ResizeImages) {
+    var defaultOptions = {
+        maxWidth: 400,
+        maxHeight: 400
+    };
     return {
         template: template,
         extend: baseView,
@@ -16,15 +20,20 @@ function($, baseView, template, ResizeImages) {
             templateName: 'home',
             hero: function() {
                 var $hero = $('.hero');
-                ResizeImages.resize($hero, {
-                    maxWidth: 400,
-                    maxHeight: 400
-                });
+                ResizeImages.resize($hero, defaultOptions);
                 return $hero;
             },
             shipping: function() {
+                var $freeShipping = $('.free-shipping');
+                var options = {
+                    sourceAttribute: 'data-mobile-src',
+                    quality: 50
+                };
+                $.extend(options, defaultOptions);
+                ResizeImages.resize($freeShipping, options);
                 return $('.free-shipping').attr('x-src');
             },
+
             discountBanner: function() {
                 return $('.banner-message');
             },
