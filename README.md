@@ -25,8 +25,8 @@ app/pages/home/view.js:
 ``` 
 ### Resize Banner Image
 
-Inside of the context find the `hero` key. We are going to resize this banner image, and set its maximum height and width to 400px before the context returns it.
-Your `hero` key should now look like this:
+Inside of the context find the `hero` key. First we're going to make a `$hero` variable and set it equal to `$('.hero')`. Now we'll resize this banner image, and set its maximum height and width to 400px before the context returns it.  
+Your `hero` key will look like this:
 
 ```javascript
     hero: function() {
@@ -39,7 +39,7 @@ Your `hero` key should now look like this:
     },
 ```
 
-We are calling ResizeImages.resize, and sending it the image we want resized, along with an options hash.
+We are calling `ResizeImages.resize()`, and sending it the image we want resized, along with an options hash. This is a destructive method, meaning that it actually changes the first variable passed to it, so we can then return the changed `$hero` variable.
 
 ### Take a Look
 
