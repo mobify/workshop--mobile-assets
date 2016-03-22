@@ -1,4 +1,4 @@
-#Adaptive.js Hijax Workshop
+#Adaptive.js Mobile Assets Workshop
 
 The example site for this workshop is [Merlin's Potions](http://www.merlinspotions.com), a mock e-commerce site that peddles potions and spell books.
 
@@ -39,7 +39,7 @@ To install the workshop:
 
 Once you install the workshop, you're ready to move on to the next step. 
 
-1. In the `workshop--hijax` directory, run the following command to proceed to the project set up branch:
+1. In the `workshop--mobile-assets` directory, run the following command to proceed to the project set up branch:
 
 ```
 git checkout step-1-resize-banner-image
