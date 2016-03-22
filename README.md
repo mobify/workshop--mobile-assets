@@ -1,5 +1,7 @@
 # Step 2: Setting an Alternate Image for Mobile
 
+Sometimes it may be in your best interests to have a different image featured for mobile versus on web. ResizeImages offers a convienient way to change image sources while using the same image element.
+
 ## Task
 
 ### Extract Options into a variable
@@ -126,4 +128,4 @@ When you're ready to continue to Step 3, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-3-images-via-ajax
 ```
 
-Then, follow the directions in the [README](https://github.com/mobify/workshop--mobile-assets/blob/step-3-images-via-ajax/README.md) for the Step 2 branch.
+Then, follow the directions in the [README](https://github.com/mobify/workshop--mobile-assets/blob/step-3-images-via-ajax/README.md) for the Step 3 branch.
