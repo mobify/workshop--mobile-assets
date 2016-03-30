@@ -1,6 +1,6 @@
 #Adaptive.js Mobile Assets Workshop
 
-The example site for this workshop is [Merlin's Potions](http://www.merlinspotions.com), a mock e-commerce site that peddles potions and spell books.
+The example site for this workshop is [Merlin's Potions](http://training.merlinspotions.com), a mock e-commerce site that peddles potions and spell books.
 
 In this workshop you'll learn how to use Mobify's ImageResizer which optimized images for mobile. 
 
