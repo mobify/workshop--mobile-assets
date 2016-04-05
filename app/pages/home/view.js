@@ -31,7 +31,7 @@ function($, ResizeImages, baseView, template) {
                 };
                 $.extend(options, defaultOptions);
                 ResizeImages.resize($freeShipping, options);
-                return $('.free-shipping').attr('x-src');
+                return $freeShipping.attr('x-src');
             },
             discountBanner: function() {
                 return $('.banner-message');
